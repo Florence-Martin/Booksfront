@@ -38,27 +38,22 @@ const App: FC = () => {
     {
       imagePath: imageRoman,
       buttonText: "Roman",
-      buttonIcon: <PlusCircle className="h-5 w-5 ml-2" />,
     },
     {
       imagePath: imagePolar,
       buttonText: "Polar",
-      buttonIcon: <BookOpen className="h-5 w-5 ml-2" />,
     },
     {
       imagePath: imageBd,
       buttonText: "BD",
-      buttonIcon: <RefreshCw className="h-5 w-5 ml-2" />,
     },
     {
       imagePath: imageTheater,
       buttonText: "Théartre",
-      buttonIcon: <BookOpen className="h-5 w-5 ml-2" />,
     },
     {
       imagePath: imagePoem,
       buttonText: "Poésie",
-      buttonIcon: <RefreshCw className="h-5 w-5 ml-2" />,
     },
   ];
 
