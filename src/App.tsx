@@ -74,7 +74,7 @@ const App: FC = () => {
     },
     {
       imagePath: imageTheater,
-      buttonText: "Théartre",
+      buttonText: "Théatre",
       isFirstCard: false,
       onClick: () => navigate("/theater"),
     },
