@@ -17,7 +17,7 @@ const BookCard: FC<BookCardProps> = ({
     <div className="relative bg-white rounded-lg shadow-2xl md:flex max-w-[250px] mx-auto mt-12 p-2 sm:p-4">
       <img
         src={imagePath}
-        alt="Image"
+        alt="CardImage"
         className="md:h-auto object-cover object-top rounded-lg md:rounded-l-lg w-full md:w-auto"
       />
       <div className="absolute -right-4 -top-4 justify-center min-w-[100px]">

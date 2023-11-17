@@ -1,6 +1,6 @@
-import React from "react";
+import React, {FC} from "react";
 
-const VisitBookPage = () => {
+const VisitBookPage: FC = () => {
   return (
     <div>
       <div className="mx-auto max-w-4xl p-8">

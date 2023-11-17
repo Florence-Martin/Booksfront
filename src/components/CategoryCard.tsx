@@ -39,7 +39,7 @@ const CategoryCard: FC<CategoryCardProps> = ({
       >
         <img
           src={imagePath}
-          alt="Image"
+          alt="CardImage"
           className="md:h-[250px] object-cover rounded-lg md:rounded-l-lg w-full"
         />
         <div className="absolute mt-8 -right-6">

@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import BookCard, { BookCardProps } from "../components/BookCard";
 import CategoryCard, { CategoryCardProps } from "../components/CategoryCard";
-import { useNavigate } from "react-router-dom";
 
 interface AllCardsPageProps {
   cardsData: BookCardProps[];
@@ -12,7 +11,6 @@ const AllCardsPage: FC<AllCardsPageProps> = ({
   cardsData,
   categoryCardsData,
 }) => {
-  const navigate = useNavigate();
 
   return (
     <div className="box-content h-full w-full p-4 border-4">
