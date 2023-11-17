@@ -21,7 +21,13 @@ import { BookCardProps } from "./components/BookCard";
 import { CategoryCardProps } from "./components/CategoryCard";
 import AddBookPage from "./pages/AddBookPage";
 import VisitBookPage from "./pages/VisitBookPage";
+import RomanceBookPage from "./pages/RomanceBookPage";
+import PolarBookPage from "./pages/PolarBookPage";
+import BdBookPage from "./pages/BdBookPage";
+import PoemBookPage from "./pages/PoemBookPage";
+import TheaterBookPage from "./pages/TheaterBookPage";
 import UpdateBookPage from "./pages/UpdateBookPage";
+import AddCategoryPage from "./pages/AddCategoryPage";
 
 const App: FC = () => {
   const navigate = useNavigate();
@@ -51,26 +57,32 @@ const App: FC = () => {
       imagePath: imageRoman,
       buttonText: "Roman",
       isFirstCard: true,
+      onClick: () => navigate("/romance"),
+
     },
     {
       imagePath: imagePolar,
       buttonText: "Polar",
       isFirstCard: false,
+      onClick: () => navigate("/polar"),
     },
     {
       imagePath: imageBd,
       buttonText: "BD",
       isFirstCard: false,
+      onClick: () => navigate("/bd"),
     },
     {
       imagePath: imageTheater,
       buttonText: "Théartre",
       isFirstCard: false,
+      onClick: () => navigate("/theater"),
     },
     {
       imagePath: imagePoem,
       buttonText: "Poésie",
       isFirstCard: false,
+      onClick: () => navigate("/poem"),
     },
   ];
 
@@ -88,8 +100,14 @@ const App: FC = () => {
             }
           />
           <Route path="/add-book" element={<AddBookPage />} />
+          <Route path="/add-category" element={<AddCategoryPage />} />
           <Route path="/add-visit-book" element={<VisitBookPage />} />
           <Route path="/add-update-book" element={<UpdateBookPage />} />
+          <Route path="/romance" element={<RomanceBookPage />} />
+          <Route path="/polar" element={<PolarBookPage />} />
+          <Route path="/bd" element={<BdBookPage />} />
+          <Route path="/poem" element={<PoemBookPage />} />
+          <Route path="/theater" element={<TheaterBookPage />} />
         </Routes>
     </>
   );

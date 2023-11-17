@@ -24,7 +24,7 @@ const AllCardsPage: FC<AllCardsPageProps> = ({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-content-center mt-20">
         {categoryCardsData.map((card, index) => (
-          <CategoryCard key={index} {...card} isFirstCard={index === 0} />
+          <CategoryCard key={index} {...card} isFirstCard={index === 0} onClick={card.onClick}/>
         ))}
       </div>
     </div>
