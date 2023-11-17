@@ -14,15 +14,15 @@ const BookCard: FC<BookCardProps> = ({ imagePath, buttonText, buttonIcon }) => {
         alt="Image"
         className="md:h-auto object-cover object-top rounded-lg md:rounded-l-lg w-full md:w-auto"
       />
-      <button className="absolute -right-4 -top-4">
+      <div className="absolute -right-4 -top-4 justify-center min-w-[100px]">
         <button
         //   onClick={handleClick}
-          className="inline-flex items-end bg-[#A30AD9] hover:bg-[#C10FFF] text-white px-4 py-2 inline-block rounded"
+          className="flex items-center justify-center  bg-[#A30AD9] hover:bg-[#C10FFF] text-white px-4 py-2 inline-block rounded"
         >
-          {buttonText}
+          <span className="mr-1">{buttonText}</span>
           {buttonIcon}
         </button>
-      </button>
+      </div>
     </div>
   );
 };

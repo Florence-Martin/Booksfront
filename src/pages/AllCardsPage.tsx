@@ -8,24 +8,28 @@ interface AllCardsPageProps {
 }
 
 const AllCardsPage: FC<AllCardsPageProps> = ({
-  cardsData,
-  categoryCardsData,
-}) => {
-  return (
-    <div className="box-content h-full w-full p-4 border-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-content-center">
-        {cardsData.map((card, index) => (
-          <BookCard key={index} {...card} />
-        ))}
+    cardsData,
+    categoryCardsData,
+  }) => {
+    return (
+      <div className="box-content h-full w-full p-4 border-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-content-center">
+          {cardsData.map((card, index) => (
+            <BookCard key={index} {...card} />
+          ))}
+        </div>
+  
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-content-center">
+          {categoryCardsData.map((card, index) => (
+            <CategoryCard
+              key={index}
+              {...card}
+              isFirstCard={index === 0} 
+            />
+          ))}
+        </div>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-content-center">
-        {categoryCardsData.map((card, index) => (
-          <CategoryCard key={index} {...card} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default AllCardsPage;
+    );
+  };
+  
+  export default AllCardsPage;

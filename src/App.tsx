@@ -38,22 +38,27 @@ const App: FC = () => {
     {
       imagePath: imageRoman,
       buttonText: "Roman",
+      isFirstCard: true,
     },
     {
       imagePath: imagePolar,
       buttonText: "Polar",
+      isFirstCard: false,
     },
     {
       imagePath: imageBd,
       buttonText: "BD",
+      isFirstCard: false,
     },
     {
       imagePath: imageTheater,
       buttonText: "Théartre",
+      isFirstCard: false,
     },
     {
       imagePath: imagePoem,
       buttonText: "Poésie",
+      isFirstCard: false,
     },
   ];
 
